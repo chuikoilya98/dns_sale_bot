@@ -19,7 +19,7 @@ def start(update, context) :
     context.bot.send_message(chat_id=update.effective_chat.id, text= 'Принял. в 12.00 скину все товары',parse_mode=telegram.ParseMode.HTML)
     while True :
         message = ''
-        with open('parser/sneakers_list.json', "r") as read_file:
+        with open('list.json', "r") as read_file:
             json_product = json.load(read_file)
         part = len(json_product)
         type_number = 0

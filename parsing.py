@@ -81,7 +81,7 @@ for k in range(count + 1):
 
 part = len(json_product)
 
-with open('parser/sneakers_list.json','a') as file:   #write info into JSON file
+with open('list.json','a') as file:   #write info into JSON file
     json.dump(json_product, file) 
 print('Parsing is done. File is ready to post')
 time.sleep(36000)
