@@ -1,1 +1,1 @@
-bot: python dns.py
+web: python dns.py
